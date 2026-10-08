@@ -6,7 +6,7 @@
 
 聚焦 AI Agent、RAG、金融 AI、漫剧与视频创作。记录从发现项目、阅读资料、动手实验到复盘判断的全过程。
 
-[阅读第一篇深度日报](daily/2026/10/2026-10-07.md) · [查看每日笔记](daily/README.md) · [查看周报目录](weekly/README.md) · [使用写作模板](templates/daily-note-template.md)
+[使用每日学习 Skill](.agents/skills/ai-daily-deep-study/SKILL.md) · [阅读第一篇深度日报](daily/2026/10/2026-10-07.md) · [查看每日笔记](daily/README.md) · [查看周报目录](weekly/README.md) · [使用写作模板](templates/daily-note-template.md)
 
 </div>
 
@@ -61,6 +61,16 @@ flowchart LR
 
 记录时会区分 **官方说明、个人理解、实验事实**。结论发生变化时，保留排查过程，并在新记录中说明最新状态。
 
+## 用 Skill 一步一步完成每日学习
+
+仓库内的 [每日 AI 技术深度学习 Skill](.agents/skills/ai-daily-deep-study/SKILL.md) 把这套方法做成了可重复的对话引导。它不会一上来代写一篇“看起来很完整”的日报，而是陪你完成选题、阅读、动手验证、核对证据和复盘。每天只深挖一个项目，先学会，再写下来。
+
+在 Codex 中打开本仓库，输入 `$ai-daily-deep-study`，例如：
+
+> `$ai-daily-deep-study 今天我想研究一个 GitHub 上的 AI 项目。请先帮我筛选，再一步一步带我读文档、做小实验，最后整理日报。`
+
+如果已经有项目链接，也可以直接说：“`$ai-daily-deep-study` 我选了这个仓库，请从阅读开始带我学。”Skill 会从你实际所在的步骤继续，复用 [日报模板](templates/daily-note-template.md)，将已验证的内容保存到 `daily/YYYY/MM/YYYY-MM-DD.md`。使用其他支持仓库级 Skill 的工具时，请先确认其发现和调用方式。
+
 ## 仓库导航
 
 | 位置 | 内容 | 从这里开始 |
@@ -68,6 +78,7 @@ flowchart LR
 | [`daily/`](daily/README.md) | 每天一个项目的深度阅读与试用 | [2026-10-07 · claude-mem](daily/2026/10/2026-10-07.md) |
 | [`weekly/`](weekly/README.md) | 每周技术变化与产品机会的归纳 | [周报说明](weekly/README.md) |
 | [`templates/`](templates/) | 日报与周报的写作框架 | [日报模板](templates/daily-note-template.md) · [周报模板](templates/weekly-report-template.md) |
+| [`.agents/skills/`](.agents/skills/ai-daily-deep-study/SKILL.md) | 每日学习与写作的项目级引导 Skill | [查看 Skill](.agents/skills/ai-daily-deep-study/SKILL.md) |
 
 ```text
 AI-Tech-Learning/
@@ -76,6 +87,7 @@ AI-Tech-Learning/
 │       └── 2026-10-07.md
 ├── weekly/                每周趋势归纳
 ├── templates/             可复用的日报和周报模板
+├── .agents/skills/        项目级每日学习 Skill
 └── README.md              仓库首页与阅读入口
 ```
 
@@ -88,3 +100,5 @@ AI-Tech-Learning/
 5. 到周末回看每日结论，用 [周报模板](templates/weekly-report-template.md) 提炼共性和产品机会。
 
 这个仓库会随着我的实际研究持续更新。如果你对某篇笔记有不同的技术判断，欢迎通过 [Issues](https://github.com/yilin6868/AI-Tech-Learning/issues) 讨论，并附上资料或复现实验。
+
+本仓库采用 [MIT License](LICENSE) 开源；复用 Skill 或模板时请保留版权与许可声明。
